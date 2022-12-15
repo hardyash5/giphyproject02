@@ -7,5 +7,7 @@ fetch(path).then(function(res) { //Returns the data to the console
     return res.json() 
 }).then(function(json) {
     console.log(json) 
+}).catch(function(err) { //Catch errors and display in console
+    console.log(err.message)
 })
 
