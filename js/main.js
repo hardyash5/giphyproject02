@@ -27,6 +27,7 @@ fetch(path).then(function(res) { //Returns the data to the console
         const height = obj.images.fixed_width.height //height for each search result
         const title = obj.title //alternate text for each search result
         outputHTML += `<img 
+        class="gifresult"
         src="${url}" 
         width="${width}" 
         height="${height}"

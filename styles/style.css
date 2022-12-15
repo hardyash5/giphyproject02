@@ -1,0 +1,13 @@
+.container {
+    width: calc(200px * 4 + 3em);
+    margin: auto;
+}
+
+.output {
+    columns: 4;
+    column-gap: 1em;
+}
+
+.gifresult {
+    margin-bottom: 1em;
+}
