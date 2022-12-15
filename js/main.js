@@ -8,15 +8,15 @@ fetch(path).then(function(res) { //Returns the data to the console
 }).then(function(json) {
     console.log(json.data[0].images.fixed_width.url) //Choosing the specific image type to display
     const outputEl = document.getElementById('output')
-    let outputHTML = ''
+    let outputHTML = '' //Empty string to hold search results that will be added to the HTML page
     
     json.data.forEach(function(obj) { //Loop through the results
         console.log(obj.images.fixed_width.url)
 
-        const url = obj.images.fixed_width.url
-        const width = obj.images.fixed_width.width
-        const height = obj.images.fixed_width.height
-        const title = obj.title
+        const url = obj.images.fixed_width.url //url for each search result
+        const width = obj.images.fixed_width.width //width for each search result
+        const height = obj.images.fixed_width.height //height for each search result
+        const title = obj.title //alternate text for each search result
         outputHTML += `<img 
         src="${url}" 
         width="${width}" 
