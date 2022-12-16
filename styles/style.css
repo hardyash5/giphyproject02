@@ -1,3 +1,6 @@
+body {
+    background-color: #2d3047;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -7,68 +10,102 @@
 header {
     display: flex;
     width: 100%;
-    background-color: aqua;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 1rem;
     margin-bottom: 1rem;  
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #2d3047;
+}
+
+header form {
+    margin-right: auto;
+    margin-left: 2rem;
 }
 
 #search-form {
-
+    border: black;
 }
 
+/*START INPUT SEARCH FIELD STYLING*/
 #search-input {
     font-size: 1.5rem;
     font-family: 'Rubik Gemstones', cursive;
     padding: 10px;
-    border: none;
     border-radius: 10px;
     margin: 1rem;
 }
+/*END INPUT SEARCH FIELD STYLING*/
 
+
+/* START OF BUTTON STYLING*/
 .button {
     font-family: 'Rubik Gemstones', cursive;
     font-size: 1.5rem;
     border: none;
     border-radius: 10px;
-    background-color: purple;
+    background-color: #61f2c2;
     color: black;
     text-align: center;
     padding: 20px;
+    margin: 1rem;
     transition: all 0.5s;
     cursor: pointer;
-}
-
-.button span {
+    }
+    .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-}
-
-.button span:after {
+    }
+    .button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-}
-
-.button:hover span {
+    }
+    .button:hover span {
     padding-right: 25px;
-}
-
-.button:hover span:after {
+    }
+    .button:hover span:after {
     opacity: 1;
     right: 0;
+    }
+/* END OF BUTTON STYLING*/
+
+/*START OF NAV LINKS STYLING*/
+.nav-list {
+    font-size: 1.75rem;
+    padding: 20px;
+    margin: 1rem;
 }
 
+.nav-item {
+    font-family: 'Rubik Gemstones', cursive;
+    display: inline;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #afbbf2;
+    padding: 0.5rem 1rem;
+}
+.nav-item a:hover {
+    color: #30f2f2;
+}
+/*END OF NAV LINKS STYLING*/
+
+/*START OF GIF IMAGE GRID STYLING*/
 .output {
-    column-gap: 1rem;
-    justify-content: center;
-    
+    width: calc(200px * 4 + 3em);
+    margin: auto;
+    columns: 4;
+    column-gap: 2rem;
 }
 
 .gifresult {
