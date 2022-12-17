@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giphy Search Engine Project 02</title>
-
-<!--Google Font - Rubik Gemstones-->    
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+  
+  <!--Google Font - Abril Fatface & Rubik Gemstones-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rubik+Gemstones&display=swap" rel="stylesheet">
 
 <!--Link to my custom stylesheet-->
 <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
-    <div class="container"> 
-
         <header>
+          <div class="site-name">
+            <h1>Giphy Search API</h1>
+            <ul class="nav-list"> <!--Navigation Links-->
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </div><!--site-name title & nav links container-->
+          </header>
+  
+          <div class="container"> 
             <form id="search-form"> <!--Form to handle user search-->
                 <input id="search-input" type="text" placeholder="Search"> <!--User Input Search Text-->
                 <button type="submit" class="button"><span>Search Giphy </span></button> <!--Submit button for search form-->
             </form>
-
-            <ul class="nav-list"> <!--Navigation Links-->
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-            </ul>
-        </header>
-
-    <div id="output" class="output"> <!--gifs go in here-->
-
-    </div> <!--output from giphy-->
-    </div> <!--container-->  
-    <script src="js/main.js"></script> <!--Connect to my JavaScript File, Giphy API Search Engine-->
+            </div> <!--container-->  
+            
+        
+        <div id="output" class="output"> <!--gifs go in here--></div> <!--output from giphy-->
+    <script src="js/main.js"></script> <!--Connection to my JavaScript File, Giphy API Search Engine-->
 </body>
 </html>
