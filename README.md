@@ -7,9 +7,9 @@ Overview/Description:
 Giphy Search Engine - Project 02 for Full-Stack Web Development Boot Camp at CMU. 
 
 User Stories:
-1. 
-2. 
-3. 
+1. As an employee, I want to be able to search and share gifs with my team. 
+2. As an internet user, I want to be able to search and gifs for entertainment. 
+3. As a nonspeaking person, I want to be able to communicate my thoughts through gifs. 
 
 Details on how to use it:
 •	allows users to enter and submit a keyword
