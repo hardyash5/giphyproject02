@@ -13,8 +13,6 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
-    border: 1px solid black;
-    border-radius: 10px;
     background-color: #2d3047;
 }
 
@@ -55,13 +53,10 @@ h1 {
     align-items: center;
     padding: 1rem;
     margin-bottom: 1rem;  
-    border: 1px solid black;
-    border-radius: 10px;
     background-color: #2d3047;
 }
 
 #search-form {
-  border: 1px solid #afbbf2;
 }
 
 #search-input {
