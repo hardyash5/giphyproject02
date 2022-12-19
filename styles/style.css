@@ -121,8 +121,14 @@ h1 {
 
 /*START MOBILE MEDIA QUERY */
 @media only screen and (max-width: 320px) {
+.site-name {
+    display: block;
+}
+    .nav-item {
+    display: block;
+}
 
-    
+
     .output {
     columns: 1;
 }
